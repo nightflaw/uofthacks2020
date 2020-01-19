@@ -17,6 +17,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#question {
+  height: 100vh;
+}
+
 .search {
   width: 100%;
   position: relative;
@@ -42,6 +46,8 @@ body {
 }
 
 .searchButton {
+  position: absolute;
+  right: 0;
   height: 50px;
   border: 1px solid var(--clr-primary);
   background: var(--clr-primary);
@@ -57,7 +63,7 @@ body {
 .wrap {
   width: 30%;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -65,7 +71,30 @@ body {
 
 .title {
   text-align: center;
-  padding-top: 35vh;
+  padding: 20px;
   font-size: 70px;
+}
+
+#title1 {
+  padding-top: 30vh;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  background-color: #64395b;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #ebebeb;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=stylee.css.map */
